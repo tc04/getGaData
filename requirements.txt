@@ -1,0 +1,7 @@
+### Library dependencies for the python.  You need to install following libraries. 
+### Command: `pip install -r requirements.txt`
+
+
+# Google Analytics API.
+google-api-python-client
+oauth2client
