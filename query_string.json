@@ -1,0 +1,153 @@
+{
+    "view1": {
+        "metrics": [
+            {
+                "expression": "ga:sessions"
+            },
+            {
+                "expression": "ga:bounceRate"
+            },
+            {
+                "expression": "ga:pageviews"
+            }
+        ],
+        "dimensions": [
+            {
+                "name": "ga:pagePathLevel1"
+            },
+            {
+                "name": "ga:pagePathLevel2"
+            },
+            {
+                "name": "ga:pagePathLevel3"
+            },
+            {
+                "name": "ga:pagePathLevel4"
+            }
+        ],
+        "orderBys": [
+            {
+                "fieldName": "ga:sessions",
+                "sortOrder": "DESCENDING"
+            }
+        ],
+        "insertString": "1"
+    },
+    "view2": {
+        "metrics": [
+            {
+                "expression": "ga:sessions"
+            },
+            {
+                "expression": "ga:avgSessionDuration"
+            },
+            {
+                "expression": "ga:pageviews"
+            },
+            {
+                "expression": "ga:users"
+            }
+        ],
+        "dimensions": [
+            {
+                "name": "ga:year"
+            },
+            {
+                "name": "ga:date"
+            },
+            {
+                "name": "ga:dayOfWeek"
+            },
+            {
+                "name": "ga:hour"
+            }
+        ],
+        "orderBys": [],
+        "insertString": ""
+    },
+    "view3": {
+        "metrics": [
+            {
+                "expression": "ga:sessions"
+            },
+            {
+                "expression": "ga:users"
+            },
+            {
+                "expression": "ga:avgSessionDuration"
+            }
+        ],
+        "dimensions": [
+            {
+                "name": "ga:deviceCategory"
+            }
+        ],
+        "orderBys": [],
+        "insertString": ""
+    },
+    "view4": {
+        "metrics": [
+            {
+                "expression": "ga:sessions"
+            },
+            {
+                "expression": "ga:users"
+            }
+        ],
+        "dimensions": [
+            {
+                "name": "ga:sourceMedium"
+            },
+            {
+                "name": "ga:source"
+            },
+            {
+                "name": "ga:medium"
+            }
+        ],
+        "orderBys": [],
+        "insertString": ""
+    },
+    "view5": {
+        "metrics": [
+            {
+                "expression": "ga:sessions"
+            },
+            {
+                "expression": "ga:users"
+            },
+            {
+                "expression": "ga:avgSessionDuration"
+            }
+        ],
+        "dimensions": [
+            {
+                "name": "ga:country"
+            },
+            {
+                "name": "ga:countryIsoCode"
+            }
+        ],
+        "orderBys": [],
+        "insertString": ""
+    },
+    "view6": {
+        "metrics": [
+            {
+                "expression": ""
+            }
+        ],
+        "dimensions": [
+            {
+                "name": ""
+            }
+        ],
+        "orderBys": [
+            {
+                "fieldName": "",
+                "sortOrder": "DESCENDING"
+            }
+        ],
+        "insertString": ""
+    }
+}
