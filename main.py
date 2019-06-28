@@ -7,15 +7,12 @@ main.py
 This program get the data from GA api and insert these data to MariaDB
 '''
 import argparse
-import json
 import datetime
+import json
 
-from apiclient.discovery import build
 import httplib2
-from oauth2client import client
-from oauth2client import file
-from oauth2client import tools
-
+from apiclient.discovery import build
+from oauth2client import client, file, tools
 
 SCOPES = ['https://www.googleapis.com/auth/analytics.readonly']
 DISCOVERY_URI = ('https://analyticsreporting.googleapis.com/$discovery/rest')
