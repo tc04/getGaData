@@ -36,7 +36,7 @@ def initGaConn() -> object:
     credentials = storage.get()
     if credentials is None or credentials.invalid:
         credentials = tools.run_flow(flow, storage)
-    http = credentials.authorize(http=httplib2.Http())
+    http = credentials.authorize(http=httplib2.Http(disable_ssl_certificate_validation=True))
 
     analytics = build('analytics', 'v4', http=http, discoveryServiceUrl=DISCOVERY_URI)
     return analytics
